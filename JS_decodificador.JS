@@ -1,5 +1,6 @@
     var cEntrada = document.querySelector("#cEntrada");
     var dSaida = document.querySelector("#dSaida");
+    var copyButton = document.querySelector("#copy")
 
     var Btn = document.querySelector("#Cbtn-1")
     Btn.addEventListener('click', function(){
@@ -27,10 +28,35 @@
     })
     
 
+    
+    copyButton.addEventListener('click',()=> {
+        dSaida.select();
+        document.execCommand('copy');
+    })
+    
 
 
 
+    var entrada = document.querySelector("#cEntrada");
 
+    entrada.addEventListener("keypress",function(x){
+
+        if (!checkChar(x)) {
+            x.preventDefault();
+        }
+
+    })
+
+    function checkChar(x){
+        var char = String.fromCharCode(x.keyCode);
+
+        const pattern = '[a-z-0-9 ]'
+
+        if(char.match(pattern)){
+            return true;
+        }
+
+    }
 
 
 

@@ -98,6 +98,7 @@ h1{
     padding: 10px;
     font-family: 'Gelassio', serif;
     outline: none;
+    text-transform: lowercase;
     
 }
 
@@ -111,9 +112,20 @@ h1{
     margin-bottom: 30px;
     margin-left: 40%;
     position: absolute;
+    z-index: 10;
     
     
 }
+.material-symbols-outlined{
+    color: #fff;
+    position: relative;
+    z-index: 20;
+    left: 95%;
+    top: -100px;
+    cursor: pointer;
+    
+}
+
 
 .botões{
     padding: 10px 20px;
@@ -178,6 +190,21 @@ a:hover{
     
 }
 
+.art{
+    text-align: end;
+    font-size: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.50s;
+    letter-spacing: 2px;
+    position: absolute;
+    font-style: italic;
+}
+
+.art:hover{
+    color: aqua;
+}
+
 @media screen and (max-width:768px){
     .estructure{
         padding: 100px 200px 0px 10px;
@@ -237,6 +264,56 @@ a:hover{
     }
 
 }
+
+@media screen  and (max-width:1051px){
+    .material-symbols-outlined{
+        left: -7%;
+        top: -50px;
+        }
+    
+}
+ 
+@media screen  and (max-width:830px){
+    .material-symbols-outlined{
+        left: 85%;
+        top: -70px;
+        }
+    
+}
+
+@media screen  and (max-width:766px){
+    .material-symbols-outlined{
+        left: -8%;
+        top: -29px;
+        }
+    
+}
+
+@media screen  and (max-width:649px){
+    .material-symbols-outlined{
+        left: 89%;
+        top: -70px;
+        }
+    
+}
+
+@media screen and (max-width:500px){
+    .material-symbols-outlined{
+        left: 121%;
+        top: -65px;
+        }
+    
+}
+
+@media screen and (max-width:450px){
+    .material-symbols-outlined{
+        left: 166%;
+        top: -65px;
+        }
+    
+}
+
+
 
 @media screen and (max-width:458px){
   
