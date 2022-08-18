@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@500&display=swap');
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +11,7 @@
 
 
 body{
-    background-image: url(https://i.pinimg.com/originals/35/8b/53/358b539b1fe285e32573de0a9cd15182.jpg);
+    background-image: url(https://i.pinimg.com/originals/3c/ab/43/3cab434622d9fabfde2f46e9a51380d6.gif);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -81,7 +82,7 @@ h1{
 
 }
 
-#texto{
+.texto{
     width: 400px;
     height: 400px;
     max-width: 400px;
@@ -102,7 +103,7 @@ h1{
 
 
 
-.decode #texto{
+.decode .texto{
     height: 400px;
     width: 400px;
     margin-top: -461px;
@@ -168,10 +169,13 @@ a{
 a:hover{
     font-weight: bolder;
     font-size: large;
-    background-color: #fff;
-    color: black;
+    background-color: rgba(20, 20, 20, 0);
+    color: rgb(0, 247, 255);
     padding: 10px;
-    border-radius: 50px; 
+    border-radius: 20px; 
+    text-shadow: 1px 1px 50px rgb(0, 255, 255);
+    
+    
 }
 
 @media screen and (max-width:768px){
@@ -200,7 +204,7 @@ a:hover{
         margin-right: 99%;
     }
 
-    .decode #texto{
+    .decode .texto{
         margin-top: 20px;
         border-radius: 4px;
         margin-bottom: 30px;
@@ -223,7 +227,7 @@ a:hover{
 }
 @media screen and (max-width:1051px){
   
-    .decode #texto{
+    .decode .texto{
         margin-top: 20px;
         border-radius: 4px;
         margin-bottom: 30px;
