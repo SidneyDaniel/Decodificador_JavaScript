@@ -107,7 +107,7 @@ h1{
 .decode .texto{
     height: 400px;
     width: 400px;
-    margin-top: -461px;
+    margin-top: -462px;
     border-radius: 4px;
     margin-bottom: 30px;
     margin-left: 40%;
@@ -169,7 +169,7 @@ h1{
     
 }
 
-a{
+.links{
     color: #fff;
     text-decoration: none;
     transition: 0.90s;
@@ -178,7 +178,7 @@ a{
 
 }
 
-a:hover{
+.links:hover{
     font-weight: bolder;
     font-size: large;
     background-color: rgba(20, 20, 20, 0);
@@ -197,7 +197,7 @@ a:hover{
     cursor: pointer;
     transition: 0.50s;
     letter-spacing: 2px;
-    position: absolute;
+    position: relative;
     font-style: italic;
 }
 
@@ -326,4 +326,37 @@ a:hover{
     }
 
 }
+
+
+@media screen and (max-width:410px){
+    .material-symbols-outlined{
+        left: 184%;
+        top: -65px;
+        }
+    
+    .texto{
+        width: 379px;
+    }
+
+    .decode .texto{
+        width: 379px;
+    }
+
+    .cabecalho .logo{
+        height: 25px;
+    }
+
+}
+
+
+@media screen and (max-width:376px){
+  
+    .material-symbols-outlined{
+        left: 211%;
+        top: -71px;
+        }
+
+}
+
+
 
