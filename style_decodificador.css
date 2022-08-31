@@ -155,6 +155,7 @@ h1{
 
 .botão:hover{
     background-color: black;
+    transform: scale(1.1);
     
     
     
@@ -178,8 +179,6 @@ h1{
 }
 
 .links:hover{
-    font-weight: bolder;
-    font-size: large;
     background-color: rgba(20, 20, 20, 0);
     color: rgb(0, 247, 255);
     padding: 10px;
