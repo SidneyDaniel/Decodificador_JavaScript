@@ -1,10 +1,64 @@
-/*
-top: 50%;
-left: 50%;
-width: 400px;
-padding: 40px;
-transform: translate(-50%,-50%);
-background: rgba(0, 0, 0,.5);
-box-sizing: border-box;
-box-shadow: 0 15px 25px rgba(0, 0, 0,.6);
-*/
+    var cEntrada = document.querySelector("#cEntrada");
+    var dSaida = document.querySelector("#dSaida");
+    var copyButton = document.querySelector("#copy")
+
+    var Btn = document.querySelector("#Cbtn-1")
+    Btn.addEventListener('click', function(){
+        var texto = cEntrada.value;
+        var newCode = texto.replace(/e/gi,'enter')
+                .replace(/i/gi,'imes')
+                .replace(/a/gi,'ai')
+                .replace(/o/gi,'ober')
+                .replace(/u/gi,'ufat');
+                dSaida.value = newCode;
+                console.log(newCode);
+    })
+
+
+    var Btn2 = document.querySelector("#Dbtn-2")
+    Btn2.addEventListener('click', function(){
+        var texto = cEntrada.value;
+        let newDecode = texto.replace(/enter/gi,'e')
+                .replace(/imes/gi,'i')
+                .replace(/ai/gi,'a')
+                .replace(/ober/gi,'o')
+                .replace(/ufat/gi,'u');
+                dSaida.value = newDecode
+                console.log(newDecode);
+    })
+    
+
+    
+    copyButton.addEventListener('click',()=> {
+        dSaida.select();
+        document.execCommand('copy');
+    })
+    
+
+
+
+    var entrada = document.querySelector("#cEntrada");
+
+    entrada.addEventListener("keypress",function(x){
+
+        if (!checkChar(x)) {
+            x.preventDefault();
+        }
+
+    })
+
+    function checkChar(x){
+        var char = String.fromCharCode(x.keyCode);
+
+        const pattern = '[a-z-0-9 ]'
+
+        if(char.match(pattern)){
+            return true;
+        }
+
+    }
+
+
+
+
+
